@@ -56,6 +56,12 @@
                   "maximumError": "10kb"
                 }
               ]
+            },
+          "hmr": {
+              "fileReplacements": [{
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.hmr.ts"
+              }]
             }
           }
         },
@@ -67,6 +73,10 @@
           "configurations": {
             "production": {
               "browserTarget": "ng-nine:build:production"
+            },
+            "hmr": {
+              "browserTarget": "ng-nine:build:hmr",
+              "hmr": true
             }
           }
         },
